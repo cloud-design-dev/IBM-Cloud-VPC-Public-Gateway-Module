@@ -1,4 +1,4 @@
 variable vpc_id {}
 variable name {}
-variable zones {}
+variable zone {}
 variable resource_group {}
