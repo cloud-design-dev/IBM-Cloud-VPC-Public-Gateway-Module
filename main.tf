@@ -9,5 +9,5 @@ resource ibm_is_public_gateway gateway {
 }
 
 locals {
-  floating_ip  = var.floating_ip_id != "" ? var.floating_ip = {id = var.floating_ip_id} : var.floating_ip = {address = var.floating_ip_address}
+  floating_ip  = var.floating_ip_id != "" ? id = var.floating_ip_id : address = var.floating_ip_address
 }
