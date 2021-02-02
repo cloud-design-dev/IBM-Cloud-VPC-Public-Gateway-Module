@@ -10,7 +10,7 @@ module public_gateway {
   name           = var.name
   zone           = var.zone
   vpc_id         = var.vpc_id
-  resource_group_id = var.resource_group
+  resource_group_id = var.resource_group_id
 }
 ```
 
@@ -23,8 +23,6 @@ module public_gateway {
 | name | Name of the public gateway | `string` | n/a | yes |
 | zone | VPC zone where the public gateway will be created.| `string` | n/a | yes |
 | tags | List of tags to add on all created resources | `list(string)` | `[]` | no |
-| floating\_ip\_id | The ID of the Floating IP to attach to the public gateway.| `string` | n/a | no |
-| floating\_ip\_address | The address of the Floating IP to attach to the public gateway.| `string` | n/a | no |
 
 ## Outputs
 
