@@ -6,7 +6,7 @@ If you need to include a Public Gateway in your IBM Cloud VPC deployment you can
 
 ```
 module public_gateway {
-  source         = "git::https://github.com/cloud-design-dev/ibm-vpc-public-gateway-module.git"
+  source         = "git::https://github.com/cloud-design-dev/IBM-Cloud-VPC-Public-Gateway-Module.git"
   name           = var.name
   zone           = var.zone
   vpc_id         = var.vpc_id
