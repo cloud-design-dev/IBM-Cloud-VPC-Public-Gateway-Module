@@ -4,5 +4,4 @@ resource ibm_is_public_gateway gateway {
   zone           = var.zone
   resource_group = var.resource_group
   tags           = var.tags
-  
 }
