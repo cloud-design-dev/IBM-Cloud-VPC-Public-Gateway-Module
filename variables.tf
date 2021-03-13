@@ -1,5 +1,5 @@
-variable vpc_id {}
+variable vpc {}
 variable name {}
 variable zone {}
-variable resource_group_id {}
+variable resource_group {}
 variable tags {}
