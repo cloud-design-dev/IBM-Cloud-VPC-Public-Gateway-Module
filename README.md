@@ -9,8 +9,8 @@ module public_gateway {
   source         = "git::https://github.com/cloud-design-dev/IBM-Cloud-VPC-Public-Gateway-Module.git"
   name           = var.name
   zone           = var.zone
-  vpc_id         = var.vpc_id
-  resource_group_id = var.resource_group_id
+  vpc            = var.vpc
+  resource_group = var.resource_group
 }
 ```
 
@@ -18,8 +18,8 @@ module public_gateway {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| resource\_group\_id | ID of the resource group to associate with the public gateway | `string` | n/a | yes |
-| vpc\_id | ID of the VPC where to create the public gateway| `string` | n/a | yes |
+| resource\_group | ID of the resource group to associate with the public gateway | `string` | n/a | yes |
+| vpc | ID of the VPC where to create the public gateway| `string` | n/a | yes |
 | name | Name of the public gateway | `string` | n/a | yes |
 | zone | VPC zone where the public gateway will be created.| `string` | n/a | yes |
 | tags | List of tags to add on all created resources | `list(string)` | `[]` | no |
