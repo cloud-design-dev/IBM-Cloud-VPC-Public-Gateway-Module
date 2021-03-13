@@ -11,6 +11,7 @@ module public_gateway {
   zone           = var.zone
   vpc            = var.vpc
   resource_group = var.resource_group
+  tags           = var.tags
 }
 ```
 
