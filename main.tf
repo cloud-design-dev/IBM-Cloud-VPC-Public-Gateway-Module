@@ -2,7 +2,7 @@ resource ibm_is_public_gateway gateway {
   name           = var.name
   vpc            = var.vpc_id
   zone           = var.zone
-  resource_group = var.resource_group_id
+  resource_group = var.resource_group
   tags           = var.tags
   
 }
